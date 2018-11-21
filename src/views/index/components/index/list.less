@@ -1,0 +1,44 @@
+
+@import "../../../../common/styles/mixin.scss";
+.index {
+    background-color: #f4f4f4;
+    width: 100%;
+    .list {
+         padding: .213333rem;
+        .item {
+            width: 100%;
+            padding-bottom: .266667rem;
+            .img {
+                img {
+                    width: 100%;
+                }
+            }
+            .text {
+                width: 100%;
+                display: flex;
+                span{
+                    padding: 0rem .106667rem;
+                    @include font-dpr(16px);
+                    color: #333;
+                    flex: 1;
+                    em {
+                        color: #fe793e;
+                    }
+                    &:nth-of-type(1) {
+                        flex: 1.5;
+                        text-overflow: ellipsis;		  
+	                    overflow: hidden;
+	                    white-space: nowrap;
+                    }
+                    &:nth-of-type(2) {
+                        text-align: right;
+                        @include font-dpr(14px);
+                        text-overflow: ellipsis;		  
+	                    overflow: hidden;
+	                    white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+} 

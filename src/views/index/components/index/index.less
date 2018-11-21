@@ -1,0 +1,148 @@
+@import "../../../../common/styles/mixin.scss";
+.index {
+    background-color: #f4f4f4;
+    .banner {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    .content {
+        padding: .213333rem;
+        .count {
+            .ul {
+                display: flex;
+                height: 1.5rem;
+                width: 100%;
+                background-color: #fe793e;
+                border-radius: 3px;
+                .li {
+                    flex: 1;
+                    @include font-dpr(16px);
+                    color: #fff;
+                    line-height: 0.5rem;
+                    text-align: center;
+                    padding-top: 0.25rem;
+                    &:first-of-type {
+                        div {
+                            border: 0px;
+                        }
+                    }
+                    div {
+                        border-left: 1px solid #fff;
+                        p {
+                            &:first-of-type {
+                                @include font-dpr(14px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .info {
+        padding-top: 0.4rem;
+        p {
+            @include font-dpr(14px);
+            line-height: 0.6rem;
+            color: #333;
+            vertical-align: middle;
+            span {
+                width: 90%;
+            }
+            i {
+                width: .48rem;
+                height: .48rem;
+                vertical-align: middle;
+            }
+            
+        }
+        .startTime i,
+        .endTime i {
+            background: url('../../../../common/assets/images/time.png') no-repeat center center;
+            background-size: 100%;
+        }
+        .rule i {
+            background: url('../../../../common/assets/images/rules.png') no-repeat center center;
+            background-size: 100%;
+        }
+        .introduce {
+            .ico {
+                vertical-align: top;
+                padding-top: .106667rem;
+            }
+        }
+        .introduce.active {
+            span {
+                width: 85%;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                vertical-align: middle;
+            }
+            .ico {
+                vertical-align: middle;
+            }
+        }
+        .introduce i {
+            background: url('../../../../common/assets/images/introduce.png') no-repeat center center;
+            background-size: 100%;
+        }
+        .introduce .icon {
+            background: url('../../../../common/assets/images/down.png') no-repeat center center;
+            background-size: 100%;
+        }
+    }
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .item {
+            padding: .16rem 0rem;
+            width: 48%;
+            .img {
+                width: 100%;
+                height: 5.333333rem;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .text {
+                text-align: center;
+                @include font-dpr(16px);
+                color: #333;
+            }
+            .rule {
+                text-align: center;
+                padding: .106667rem .213333rem;
+                @include font-dpr(12px);
+                color: #333;
+                span {
+                    em {
+                        color: #fe793e;
+                    }
+                }
+            }
+            .ticket {
+                text-align: right;
+                line-height: .693333rem;
+            }
+            .btn {
+                text-align: center;
+                button {
+                    background-color: #fe793e;
+                    color: #fff;
+                    width: 100%;
+                    .icon {
+                        width: .426667rem;
+                        height: .426667rem;
+                        background: url('../../../../common/assets/images/vote.png') no-repeat;
+                        background-size: 100%;
+                        margin-right: .213333rem;
+                    }
+                }
+            }
+        }
+    }
+}
